@@ -119,12 +119,15 @@ class RecordingsListAdapter(val values: MutableList<String>?, private val listen
             // This piece of software is used in multiple places in Story Producer
             // Grab the default instructions for data entry
             // This is something like: "Choose a new name"
-            var title = itemView.context.getString(R.string.rename_title)
+            var title : String
 
             // If this is Wordlinks, use instructions that are geared toward Wordlinks
             when(Workspace.activePhase.phaseType){
                 PhaseType.WORD_LINKS -> {
                     title = itemView.context.getString(R.string.rename_title_wordlinks)
+                }
+                else -> {
+                    title = itemView.context.getString(R.string.rename_title)
                 }
             }
 

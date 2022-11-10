@@ -31,7 +31,7 @@ internal val SAMPLE_RATE = 44100
 internal val BIT_DEPTH = 16
 internal val AUDIO_CHANNELS = 1
 //Set bit rate to exact spec of Android doc or to SAMPLE_RATE * BIT_DEPTH.
-internal val BIT_RATE = SAMPLE_RATE * BIT_DEPTH
+internal val BIT_RATE = SAMPLE_RATE * BIT_DEPTH // TODO: Review this value to save storage space as it is probably too high
 
 /**
  * Thin wrapper for [MediaRecorder] which provides some default behavior for recorder.

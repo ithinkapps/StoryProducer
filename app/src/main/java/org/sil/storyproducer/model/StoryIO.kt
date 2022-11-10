@@ -5,7 +5,9 @@ import android.os.Build
 import android.os.Environment
 import androidx.documentfile.provider.DocumentFile
 import com.google.firebase.crashlytics.FirebaseCrashlytics
+import com.squareup.moshi.JsonAdapter
 import com.squareup.moshi.Moshi
+import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import net.lingala.zip4j.ZipFile
 import org.sil.storyproducer.App
 import org.sil.storyproducer.BuildConfig
@@ -32,8 +34,10 @@ fun Story.toJson(context: Context){
             .Builder()
             .add(RectAdapter())
             .add(UriAdapter())
+            .add(KotlinJsonAdapterFactory())
             .build()
-    val adapter = Story.jsonAdapter(moshi)
+//    val adapter = Story.jsonAdapter(moshi)
+    val adapter: JsonAdapter<Story> = moshi.adapter(Story::class.java).nonNull()
     val oStream = getStoryChildOutputStream(context,
             filePath,"",this.title)
     if(oStream != null) {
@@ -73,8 +77,10 @@ fun storyFromJson(context: Context, storyTitle: DocumentFile): Story?{
                 .Builder()
                 .add(RectAdapter())
                 .add(UriAdapter())
+                .add(KotlinJsonAdapterFactory())
                 .build()
-        val adapter = Story.jsonAdapter(moshi)
+//        val adapter = Story.jsonAdapter(moshi)
+        val adapter: JsonAdapter<Story> = moshi.adapter(Story::class.java).nonNull()
         fileContents = getStoryText(context, filePath, storyTitle.name!!)
                 ?: return null
         return adapter.fromJson(fileContents)
