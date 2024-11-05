@@ -141,7 +141,8 @@ class MainActivity : BaseActivity(), Serializable {
         // so point (roughly) to end of first story
         val storyListViewPercent = (100f / totalVisibleStories).toInt()
 
-        mPopupHelpUtils?.addHtml5HelpItem(R.id.activity_main, "file:///android_asset/html5/page4/Introduction2.html")
+        //mPopupHelpUtils?.addHtml5HelpItem(R.id.activity_main, "file:///android_asset/html5/page4/Introduction2.html")
+        mPopupHelpUtils?.addHtml5HelpItem(R.id.activity_main, "file:///android_asset/html5/Video5/Introduction4.html")
 
         mPopupHelpUtils?.addFullScreenHelpItem(R.id.activity_main, R.drawable.intro1_welcome)
         mPopupHelpUtils?.addFullScreenHelpItem(R.id.activity_main, R.drawable.intro2_translate_revise)
@@ -274,9 +275,9 @@ class MainActivity : BaseActivity(), Serializable {
 
         wv.loadDataWithBaseURL(null, text,"text/html",null,null)
         val dialog = AlertDialog.Builder(this)
-            .setTitle("Story List Help")    // TODO: LOCALIZATION: Move this text to strings.xml resource
+            .setTitle(baseContext.getString(R.string.title_activity_story_templates) + " " + baseContext.getString(R.string.help))
             .setView(wv)
-            .setNegativeButton("Close") { dialog, _ ->  // TODO: LOCALIZATION: Move this text to strings.xml resource
+            .setNegativeButton(baseContext.getString(R.string.nav_close)) { dialog, _ ->
                 dialog!!.dismiss()
             }
         dialog.show()
@@ -335,8 +336,8 @@ class MainActivity : BaseActivity(), Serializable {
 
     override fun onBackPressed() {
         val dialog = AlertDialog.Builder(this)
-                .setTitle("Exit Application?")  // TODO: LOCALIZATION: Move this text to strings.xml resource
-                .setMessage("Are you sure you want to quit?")   // TODO: LOCALIZATION: Move this text to strings.xml resource
+                .setTitle(baseContext.getString(R.string.exit_application))
+                .setMessage(baseContext.getString(R.string.exit_are_you_sure))
                 .setNegativeButton(getString(R.string.no), null)
                 .setPositiveButton(getString(R.string.yes)) { _, _ ->
                     finishAffinity()

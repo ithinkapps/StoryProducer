@@ -154,7 +154,7 @@ class LearnActivity : PhaseBaseActivity(), PlayBackRecordingToolbar.ToolbarMedia
             80, 90,
             R.string.help_learn_listen_title, R.string.help_learn_listen_body) {
                 Workspace.activeStory.activityLogs.firstOrNull {
-                    it.phase.phaseType == PhaseType.LEARN && it.description.contains("Playback Slide")  // TODO: LOCALIZATION: Temp string
+                    it.phase.phaseType == PhaseType.LEARN && it.description.contains(baseContext.getString(R.string.log_entry_playback))
             } != null
         }
         mPopupHelpUtils?.addPopupHelpItem(
