@@ -145,6 +145,8 @@ class LearnActivity : PhaseBaseActivity(), PlayBackRecordingToolbar.ToolbarMedia
 
         mPopupHelpUtils = PopupHelpUtils(this)
 
+        mPopupHelpUtils?.addHtml5HelpItem(R.id.toolbar, "html5/The Learn Phase2/The Learn Phase2.html")
+
         mPopupHelpUtils?.addPopupHelpItem(
             R.id.toolbar,
             45, 90,

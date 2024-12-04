@@ -211,11 +211,23 @@ class PopupHelpUtils(private val parent: Any,
         popupItems.add(newPopup)
     }
 
+    fun assetExists(context: Context, assetName: String): Boolean {
+        return try {
+            // Attempt to open the asset
+            context.assets.open(assetName).close()
+            true
+        } catch (e: Exception) {
+            // If an exception is thrown, the asset does not exist
+            false
+        }
+    }
+
     fun addHtml5HelpItem(anchorViewId: Int,
                          html5Animation: String) {
-
-        val newPopup = PopupHtml5Item(anchorViewId, html5Animation)
-        popupItems.add(newPopup)
+        if (context != null && assetExists(context!!, html5Animation)) {
+            val newPopup = PopupHtml5Item(anchorViewId, "file:///android_asset/${html5Animation}")
+            popupItems.add(newPopup)
+        }
     }
 
     fun stopShowingPopupHelp() {
