@@ -445,6 +445,7 @@
     <string name="voice_studio_move_time">Now it’s time to record the final audio in the Voice Studio phase.</string>
     <string name="build_story_failed">The following templates failed to load and are not compatible with Story Producer:</string>
     <string name="update_reading_templates_dialog">%1$d of %2$d templates\n\n%3$s</string>
+    <string name="sp_logo">Story Producer logo</string>
 
     <!-- Strings from Bloom Library Reader Web Download pages  -->
     <string name="read_now">Read Now</string>
