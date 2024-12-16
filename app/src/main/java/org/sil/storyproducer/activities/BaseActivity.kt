@@ -68,7 +68,7 @@ open class BaseActivity : AppCompatActivity(), BaseActivityView {
                 return
 
             // set bold spannable
-            var lockScreenText = (lockTextView.text ?: return) as String
+            var lockScreenText = (lockTextView.text.toString() ?: return) as String
             val boldStart = lockScreenText.indexOf("<b>")
             val boldEnd = lockScreenText.indexOf("</b>") - 3
             lockScreenText = lockScreenText.replace("<b>", "")
