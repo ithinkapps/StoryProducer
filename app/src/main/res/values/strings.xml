@@ -1,4 +1,21 @@
 <resources>
+<!--    Notes on fixing [French] machine translations (google translate)
+    1. Replace: &amp;
+       With:    &
+    2. Replace: &#39;
+       With:    \'
+    3. Replace: ’
+       With:    \'
+    4. Replace: &lt;
+       With     <
+    5. Replace: &gt;
+       With     >
+    6. Replace: <<<<<<
+       With:    &lt;&lt;&lt;&lt;&lt;&lt;
+    7. Add CDATA to "lock_screen_text" named string
+    8. Add " |" to end of "lock_screen_text" named string
+    9. Remove \ from =\"...\" in tags
+-->
     <string name="app_name">Story Producer</string>
 
     <!-- General -->
@@ -314,8 +331,8 @@
     <string name="all_stories_tab">All Stories</string>
     <string name="in_progress_tab">In Progress</string>
     <string name="completed_tab">Completed</string>
-    <string name="more_story_templates"><b>Tip:</b>\nIf you are connected to the internet, you can add more stories!\nTap the menu in the upper left, and choose one of the <b>\'Download ...\'</b> actions.</string>
-    <string name="filter_chips_feature">Use the white buttons at the top of the Story List to filter and display types of stories.\nFor example, you can display only Old Testament (<b>OT</b>) or New Testament (<b>NT</b>) stories by selecting the appropriate buttons.\nTap the white buttons to try it out.</string>
+    <string name="more_story_templates">Tip:\nIf you are connected to the internet, you can add more stories!\nTap the menu in the upper left, and choose one of the \'Download ...\' actions.</string>
+    <string name="filter_chips_feature">Use the white buttons at the top of the Story List to filter and display types of stories.\nFor example, you can display only Old Testament (OT) or New Testament (NT) stories by selecting the appropriate buttons.\nTap the white buttons to try it out.</string>
 
     <!-- Filter Toolbar -->
     <string name="film_toolbar">Film</string>
@@ -816,7 +833,7 @@
     <string name="help_menu_detailed">Show detailed help for this page</string>
     <string name="help_menu_tutor_restart">Restart Tutorial</string>
     <string name="help_menu_tutor_resume">Resume Tutorial</string>
-    <string name="help_tutor_dismiss_message">Tap the blue help <b>[?]</b> button in the toolbar to Resume the Tutorial.</string>
+    <string name="help_tutor_dismiss_message">Tap the blue help [?] button in the toolbar to Resume the Tutorial.</string>
     <string name="help_tutor_no_more_pages">No more tutorial pages for this section.</string>
 
 </resources>

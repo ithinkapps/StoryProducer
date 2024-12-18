@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
+
     <string name="app_name">Producteur d\'histoire</string>
 
     
@@ -269,7 +270,7 @@
 
     
     <string name="LC_obsolete_starting_text">Langue :\nTraduit par :\nNouveaux crédits image :\nNarration / Doublage par :\nChanson locale par :</string>
-    <string name="LC_starting_text">Contact local (téléphone/e-mail) :\nLangue :\nTraduit par :\nNouveaux crédits image :\nNarration / doublage par :\nChanson locale par :</string>
+    <string name="LC_starting_text">Contact local (téléphone/e-mail) :\nLangue :\nTraduit par :\nNouveaux crédits images :\nNarration / doublage par :\nChanson locale par :</string>
     <string name="LC_prompt">Les crédits locaux seront ajoutés pendant le doublage.</string>
     <string name="export_local_credits_header">Crédits locaux</string>
     <string name="license_attribution">Cette vidéo est sous licence Creative Commons Attribution-BY-SA-ShareAlike 4.0 International License ©</string>
@@ -305,8 +306,8 @@
     <string name="all_stories_tab">Toutes les histoires</string>
     <string name="in_progress_tab">En cours</string>
     <string name="completed_tab">Complété</string>
-    <string name="more_story_templates"><b>Astuce :</b> \nSi vous êtes connecté à Internet, vous pouvez ajouter d\'autres histoires !\nAppuyez sur le menu en haut à gauche et choisissez l\'une des actions <b>« Télécharger ... »</b> .</string>
-    <string name="filter_chips_feature">Utilisez les boutons blancs en haut de la liste des histoires pour filtrer et afficher les types d\'histoires.\nPar exemple, vous pouvez afficher uniquement les histoires de l\'Ancien Testament ( <b>AT</b> ) ou du Nouveau Testament ( <b>NT</b> ) en sélectionnant les boutons appropriés.\nAppuyez sur les boutons blancs pour l\'essayer.</string>
+    <string name="more_story_templates">Astuce :\nSi vous êtes connecté à Internet, vous pouvez ajouter d\'autres histoires !\nAppuyez sur le menu en haut à gauche et choisissez l\'une des actions « Télécharger ... ».</string>
+    <string name="filter_chips_feature">Utilisez les boutons blancs en haut de la liste des histoires pour filtrer et afficher les types d\'histoires.\nPar exemple, vous pouvez afficher uniquement les histoires de l\'Ancien Testament (AT) ou du Nouveau Testament (NT) en sélectionnant les boutons appropriés.\nAppuyez sur les boutons blancs pour l\'essayer.</string>
 
     
     <string name="film_toolbar">Film</string>
@@ -592,7 +593,7 @@
     </string>
     <string name="help_community_swipe_title" />
     <string name="help_community_swipe_body">
-        Vous devez commencer par la diapositive de titre. Si une autre diapositive s\'affiche, faites glisser votre doigt vers la gauche ou la droite jusqu\'à ce que la diapositive de titre s\'affiche.<br/> &lt;&lt;&lt;&lt;&lt;&lt; >>>>>>
+        Vous devez commencer par la diapositive de titre. Si une autre diapositive s\'affiche, faites glisser votre doigt vers la gauche ou la droite jusqu\'à ce que la diapositive de titre s\'affiche.<br/> &lt;&lt;&lt;&lt;&lt;&lt; &lt;&lt;&lt;&lt;&lt;&lt;
     </string>
     <string name="help_community_play_title">Lire l\'audio</string>
     <string name="help_community_play_body">
@@ -743,7 +744,7 @@
     <string name="help_menu_detailed">Afficher l\'aide détaillée pour cette page</string>
     <string name="help_menu_tutor_restart">Tutoriel de redémarrage</string>
     <string name="help_menu_tutor_resume">Tutoriel sur la rédaction de CV</string>
-    <string name="help_tutor_dismiss_message">Appuyez sur le bouton d\'aide bleu <b>[?]</b> dans la barre d\'outils pour reprendre le didacticiel.</string>
+    <string name="help_tutor_dismiss_message">Appuyez sur le bouton d\'aide bleu [?] dans la barre d\'outils pour reprendre le didacticiel.</string>
     <string name="help_tutor_no_more_pages">Plus de pages de tutoriel pour cette section.</string>
 
 </resources>
